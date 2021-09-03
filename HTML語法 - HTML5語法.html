@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0015)http://html.tw/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="keywords" content="HTML, HTML5, HTML語法, HTML5語法, 網頁設計">
+<meta name="description" content="HTML語法 - HTML5語法 : 網頁設計HTML5基本語法結構示意 - HTML標記包含標籤（及其屬性）、基於字元的資料類型、字元參照和實體參照等幾個關鍵部分。HTML標籤是最常見的，通常成對出現。">
+
+<title>HTML語法 - HTML5語法</title>
+<style>
+a:hover,a:active{color:#4CAF50}
+table.w3-table-all{margin:20px 0}
+/*OPPSETT AV TOP, TOPNAV, SIDENAV, MAIN, RIGHT OG FOOTER:*/
+.top {
+position:relative;
+background-color:#ffffff;
+height:68px;
+padding-top:20px;
+line-height:50px;
+overflow:hidden;
+z-index:2;
+}
+.w3schools-logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height:1;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:absolute;
+top:17px;
+}
+.w3schools-logo .dotcom {color:#4CAF50}
+.topnav {
+position:relative;
+z-index:2;
+font-size:17px;
+background-color:#5f5f5f;
+color:#f1f1f1;
+width:100%;
+padding:0;
+letter-spacing:1px;
+font-family:"Segoe UI",Arial,sans-serif;
+}
+.topnav a{
+padding:10px 15px 9px 15px !important;
+}
+.topnav .w3-bar a:hover{
+background-color:#000000 !important;
+color:#ffffff !important;
+}
+.topnav .w3-bar a.active {
+background-color:#4CAF50;
+color:#ffffff;
+}
+a.topnav-icons {
+width:52px !important;
+font-size:20px !important;
+padding-top:11px !important;
+padding-bottom:13px !important;
+}
+a.topnav-icons.fa-home {font-size:22px !important}
+a.topnav-icons.fa-menu {font-size:22px !important}
+a.topnav-localicons {
+font-size:20px !important;
+padding-top:6px !important;
+padding-bottom:12px !important;
+}
+i.fa-caret-down,i.fa-caret-up{width:10px}
+#sidenav h2 {
+font-size:21px;
+padding-left:16px;
+margin:-4px 0 4px 0;
+width:204px;
+}
+#sidenav a {font-family:"Segoe UI",Arial,sans-serif;text-decoration:none;display:block;padding:2px 1px 1px 16px}
+#sidenav a:hover {color:#000000;background-color:#cccccc;}
+#sidenav a.active {background-color:#4CAF50;color:#ffffff}
+#leftmenuinner {
+position:fixed;
+top:0;
+padding-top:112px;
+padding-bottom:0;    
+height:100%;
+width:220px;
+background-color:transparent;
+}
+#leftmenuinnerinner {
+height:100%;
+width:100%;
+overflow-y:scroll;
+overflow-x:hidden;
+padding-top:20px;
+}
+#main {padding:16px}
+#mainLeaderboard {height:90px}
+#right {text-align:center;padding:16px 16px 0 0}
+#right a {text-decoration:none}
+#right a:hover {text-decoration:underline}
+#skyscraper {min-height:600px}
+.sidesection {margin-bottom:32px;}
+.bottomad {padding:0 16px 16px 0;float:left;width:auto;}
+.footer a {text-decoration:none;}
+.footer a:hover{text-decoration:underline;}
+#nav_tutorials,#nav_references,#nav_examples{-webkit-overflow-scrolling:touch;overflow:auto;}
+#nav_tutorials::-webkit-scrollbar,#nav_references::-webkit-scrollbar,#nav_examples::-webkit-scrollbar {width: 12px;}
+#nav_tutorials::-webkit-scrollbar-track,#nav_references::-webkit-scrollbar-track,#nav_examples::-webkit-scrollbar-track {background:#555555;}
+#nav_tutorials::-webkit-scrollbar-thumb,#nav_references::-webkit-scrollbar-thumb,#nav_examples::-webkit-scrollbar-thumb {background: #999999;}
+#nav_tutorials,#nav_references,#nav_examples {
+display:none;
+letter-spacing:0;
+margin-top:44px;
+}
+#nav_tutorials a,#nav_references a,#nav_examples a{
+padding:2px 0 !important;
+}
+.w3-example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.nextprev a {font-size:17px;border:1px solid #cccccc;}
+.nextprev a:link,.nextprev a:visited {background-color:#ffffff;color:#000000;}
+.nextprev a.w3-right {background-color:#4CAF50;color:#ffffff;border-color:#4CAF50}
+.w3-theme {color:#fff !important;background-color:#73AD21 !important;background-color:#4CAF50 !important}
+.w3-theme-border {border-color:#4CAF50 !important}
+.fa-facebook-square,.fa-twitter-square,.fa-google-plus-square {padding:0 8px;}
+.fa-facebook-square:hover, .fa-thumbs-o-up:hover {color:#3B5998;}
+.fa-twitter-square:hover {color:#55acee;}
+.fa-google-plus-square:hover {color:#dd4b39;}
+#google_translate_element img {margin-bottom:-1px;}
+#googleSearch {color:#000000;}
+#googleSearch a {padding:0 !important;}
+.searchdiv {max-width:400px;margin:auto;text-align:left;font-size:16px}
+div.cse .gsc-control-cse, div.gsc-control-cse {background-color:transparent;border:none;padding:6px;margin:0px}
+td.gsc-search-button input.gsc-search-button {background-color:#4CAF50;border-color:#4CAF50}
+td.gsc-search-button input.gsc-search-button:hover {background-color:#46a049;}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
+box-sizing:content-box; line-height:normal;}
+.gsc-tabsArea div {overflow:visible;}
+/*"nullstille" w3css:*/
+.w3-main{transition:margin-left 0s;}
+/*"nullstilling" slutt*/
+@media (min-width:1675px) {
+#main {width:79%}
+#right {width:21%}
+}
+@media (max-width:992px) {
+.top {height:100px}
+.top img {display:block;margin:auto;}
+.top .w3schools-logo {position:relative;top:0;width:100%;text-align:center;margin:auto}
+.toptext {width:100%;text-align:center}
+#sidenav {width:260px;}
+#sidenav h2 {font-size:26px;width:100%;}
+#sidenav a {padding:3px 2px 3px 24px;font-size:17px}
+#leftmenuinner {  
+box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+overflow:auto;
+-webkit-overflow-scrolling:touch;
+height:100%;
+position:relative;
+width:auto;
+padding-top:0;
+background-color:#f1f1f1;
+}
+#leftmenuinnerinner {overflow-y:scroll}
+.bottomad {float:none;text-align:center}
+#skyscraper {min-height:60px}
+}
+@media screen and (max-width:600px) {
+.top {height:68px}
+.toptext {display:none}
+}
+@font-face {
+font-family:'fontawesome';
+src: url('../lib/fonts/fontawesome.eot?14663396');
+src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'),
+url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:inherit;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0, 0);
+}
+.fa-2x {
+ font-size:2em;
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-facebook-square:before {content:'\e806';}
+.fa-google-plus-square:before {content:'\e807';}
+.fa-twitter-square:before {content:'\e808';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+span.marked, span.deprecated {
+ color:#e80000;
+ background-color:transparent;
+}
+.intro {font-size:16px}
+.w3-btn, .w3-btn:link, .w3-btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.w3-btn[href*="exercise.asp"] {margin:10px 5px 0 0}
+a.btnplayit,a.btnplayit:link,a.btnplayit:visited {background-color:#FFAD33;padding:1px 10px 2px 10px}
+a.btnplayit:hover,a.btnplayit:active {background-color:#ffffff;color:#FFAD33}
+a.btnsmall:link,a.btnsmall:visited,a.btnsmall:active,a.btnsmall:hover {
+float:right;padding:1px 10px 2px 10px;font:15px Verdana, sans-serif}
+a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
+@media screen and (max-width:700px) {
+#mainLeaderboard {height:60px}
+#div-gpt-ad-1422003450156-0 {float:none;margin-left:auto;margin-right:auto}
+#div-gpt-ad-1422003450156-3 {float:none;margin-left:auto;margin-right:auto}
+}
+@media (max-width:1600px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(16){display:none;}}
+@media (max-width:1500px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}
+@media (max-width:1410px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(11){display:none;}}
+@media (max-width:1350px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}
+@media (max-width:1230px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}
+@media (max-width:1140px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}
+@media (max-width:1000px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}
+@media (max-width:992px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(6){display:none;}}
+@media (max-width:930px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(17){display:none;}}
+@media (max-width:800px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(18){display:none;}}
+@media (max-width:650px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(5){display:none;} #topnav .w3-bar:nth-of-type(1) a:nth-of-type(15){display:none;}}
+@media (max-width:460px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(4){display:none;}}
+@media (max-width:400px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(3){display:none;}}
+.w3-note{background-color:#ffffcc;border-left:6px solid #ffeb3b}
+.w3-warning{background-color:#ffdddd;border-left:6px solid #f44336}
+.w3-info{background-color:#ddffdd;border-left:6px solid #4CAF50}
+hr[id^="ez-insert-after-placeholder"] {margin-top: 0;}
+</style>
+<script async="" type="text/javascript" src="./HTML語法 - HTML5語法_files/gpt.js.下載"></script><script async="" src="./HTML語法 - HTML5語法_files/analytics.js.下載"></script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+gads.src = 'https://www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type="text/javascript">
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([780, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1150, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var stickyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], []). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+defineSizeMapping(stickyMapping).addService(googletag.pubads());
+var mcontMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+// Vertical Tablet ad
+addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+var rbmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], []). 
+// Large Desktop
+addSize([975, 0], [[300, 250], [336, 280]]).build();
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+googletag.pubads().setTargeting("content",(function () {
+  var folder = location.pathname;
+  folder = folder.replace("/", "");
+  folder = folder.substr(0, folder.indexOf("/"));
+  return folder;
+})()
+);
+googletag.enableServices();
+});
+</script>
+
+<style type="text/css">
+th {
+	background-color: #CCC;
+	margin: 0px;
+	padding: 5px;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+tbody {
+	margin: 0px;
+	padding: 0px;
+}
+tr {
+	margin: 0px;
+	padding: 0px;
+}
+td {
+	margin: 0px;
+	padding: 5px;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	background-color: #F8F8F8;
+	line-height: 28px;
+}
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #CCC;
+	padding: 0px;
+	width: 560px;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#content {
+	background-color: #FFF;
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 10px;
+}
+h1 {
+	font-family: "微軟正黑體", "標楷體", "新細明體";
+	font-size: 36px;
+	color: #900;
+}
+body {
+	background-color: #FFC;
+	line-height: 30px;
+}
+.html5badge {
+background-image:url('/images/html5_badge20.png');
+background-repeat:no-repeat;
+background-position:right;
+}
+
+</style>
+<meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./HTML語法 - HTML5語法_files/pubads_impl_2021051001.js.下載" async=""></script></head>
+
+<body topmargin="0">
+
+<h1 align="center">HTML語法 - HTML5語法</h1>
+
+<p>HTML5 是用於取代1999年所製定的 HTML 4.01 和 XHTML 1.0 標準的 HTML 標準版本，現在仍處於發展階段，但大部分瀏覽器已經支持某些 HTML5 技術。 HTML5 有兩大特點：首先，強化了 Web 網頁的表現性能。其次，追加了本地資料庫等 Web 應用的功能。廣義論及 HTML5 時，實際指的是包括 HTML、CSS 和 JavaScript 在內的一套技術組合。</p>
+
+<p>2011年5月，工作小組將HTML5推進至「最終徵求」（Last Call）階段，邀請W3C社群內外人士以確認本規範的技術可靠性。W3C開發了一套綜合性測試套件來實現完整規範的廣泛互動操作性，完整規範的目標日期為2014年。2011年1月，WHATWG將其「HTML5」活動標準重新命名為「HTML」。W3C仍然繼續其發布HTML5的專案。2014年10月28日，HTML5作為穩定W3C推薦標準發布，這意味著HTML5的標準化已經完成。</p>
+
+<p>HTML標記包含標籤（及其屬性）、基於字元的資料類型、字元參照和實體參照等幾個關鍵部分。HTML標籤是最常見的，通常成對出現。這些成對出現的標籤中，第一個標籤是開始標籤，第二個標籤是結束標籤。兩個標籤之間為元素的內容，有些標籤沒有內容，為空元素。</p>
+
+<p>HTML文件由巢狀的HTML元素構成。它們用HTML標籤表示，包含於尖括弧中，
+在一般情況下，一個元素由一對標籤表示：「開始標籤」與「結束標籤」。元素如果含有文字內容，就被放置在這些標籤之間。
+在開始與結束標籤之間也可以封裝另外的標籤，包括標籤與文字的混合。這些巢狀元素是父元素的子元素。
+開始標籤也可包含標籤屬性。這些屬性有諸如標識文件區段、將樣式資訊繫結到文件演示和為一些如img等的標籤嵌入圖像、參照圖像來源等作用。
+一些元素如換行符br，不允許嵌入任何內容，無論是文字或其他標籤。這些元素只需一個單一的空標籤（類似於一個開始標籤），無需結束標籤。
+許多標籤是可選的，尤其是那些很常用的段落元素p的閉合端標籤。HTML瀏覽器或其他媒介可以從上下文識別出元素的閉合端以及由HTML標準所定義的結構規則。這些規則非常複雜，不是大多數HTML編碼人員可以完全理解的。</p>
+<p>&nbsp;</p>
+
+<!------Code Start--------->
+<h2>按類別排序的HTML標籤</h2>
+<p class="html5badge" style="background-position:left;padding-left:20px;height:18px;">= New in HTML5.</p>
+<hr>
+
+<h2>基本HTML語法</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_doctype.asp">&lt;!DOCTYPE&gt;</a>&nbsp;</td>
+<td>文件類型</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_html.asp">&lt;html&gt;</a></td>
+<td>HTML 文件</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_head.asp">&lt;head&gt;</a></td>
+<td>HTML 文件檔頭</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_title.asp">&lt;title&gt;</a></td>
+<td>HTML 文件之標題</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_body.asp">&lt;body&gt;</a></td>
+<td>本文內容</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_hn.asp">&lt;h1&gt; to &lt;h6&gt;</a></td>
+<td>標題字 1 至 6 級</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_p.asp">&lt;p&gt;</a></td>
+<td>段落</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_br.asp">&lt;br&gt;</a></td>
+<td>換行</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_hr.asp">&lt;hr&gt;</a></td>
+<td>橫線</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_comment.asp">&lt;!--...--&gt;</a></td>
+<td>註解</td>
+</tr>
+</tbody></table>
+
+<h2>格式化</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_acronym.asp">&lt;acronym&gt;</a></td>
+<td><span class="deprecated"> HTML5 不支援. 使用 &lt;abbr&gt; 代替.<br></span>定義首字母縮寫</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_abbr.asp">&lt;abbr&gt;</a></td>
+<td>定義縮寫或首字母縮略詞</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_address.asp">&lt;address&gt;</a></td>
+<td>住址元件</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_b.asp">&lt;b&gt;</a></td>
+<td>粗體字</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_bdi.asp">&lt;bdi&gt;</a></td>
+<td>定義範圍內文字的方向</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_bdo.asp">&lt;bdo&gt;</a></td>
+<td>改變文字顯示方向</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_big.asp">&lt;big&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用 CSS 語法代替.<br>
+</span>大字體</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></td>
+<td>長段區塊文字</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_center.asp">&lt;center&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用 CSS 語法代替.<br>
+</span>將物件置中</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_cite.asp">&lt;cite&gt;</a></td>
+<td>使用引文</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_code.asp">&lt;code&gt;</a></td>
+<td>電腦程式內文</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_del.asp">&lt;del&gt;</a></td>
+<td>刪除的文字</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_dfn.asp">&lt;dfn&gt;</a></td>
+<td>表示術語的定義實例</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_em.asp">&lt;em&gt;</a></td>
+<td>斜體字&nbsp;</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_font.asp">&lt;font&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用 CSS 語法代替.<br></span>設定字體大小、字型、顏色</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_i.asp">&lt;i&gt;</a></td>
+<td>斜體字</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_ins.asp">&lt;ins&gt;</a></td>
+<td>定義已插入到文檔中的文字</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_kbd.asp">&lt;kbd&gt;</a></td>
+<td>定義鍵盤輸入文字</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_mark.asp">&lt;mark&gt;</a></td>
+<td>定義標記區的文字</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_meter.asp">&lt;meter&gt;</a></td>
+<td>產生設定的範圍比例圖示</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_pre.asp">&lt;pre&gt;</a></td>
+<td>文字預設式樣</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_progress.asp">&lt;progress&gt;</a></td>
+<td>表現目前工作進度</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_q.asp">&lt;q&gt;</a></td>
+<td>內文短引用語</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_rp.asp">&lt;rp&gt;</a></td>
+<td>定義在不支持ruby註釋的瀏覽器中顯示的內容</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_rt.asp">&lt;rt&gt;</a></td>
+<td>定義與顯示東亞文字裡的聲調或注  音解釋</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_ruby.asp">&lt;ruby&gt;</a></td>
+<td>定義ruby註釋 (對於東亞文字)</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_s.asp">&lt;s&gt;</a></td>
+<td>文字刪除線</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_samp.asp">&lt;samp&gt;</a></td>
+<td>電腦程式樣本</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_small.asp">&lt;small&gt;</a></td>
+<td>文字縮小</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_strike.asp">&lt;strike&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用&lt;del&gt; 或 &lt;s&gt; 代替.<br></span>文字刪除線</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_strong.asp">&lt;strong&gt;</a></td>
+<td>文字加粗</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_sub.asp">&lt;sub&gt;</a></td>
+<td>下標字</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_sup.asp">&lt;sup&gt;</a></td>
+<td>上標字</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_time.asp">&lt;time&gt;</a></td>
+<td>定義日期與時間</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_tt.asp">&lt;tt&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用 CSS 語法代替.<br></span>電報字格式</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_u.asp">&lt;u&gt;</a></td>
+<td>文字下加底線</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_var.asp">&lt;var&gt;</a></td>
+<td>變數或使用者定義的文字</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_wbr.asp">&lt;wbr&gt;</a></td>
+<td>定義連續字母中可分行處</td>
+</tr>
+</tbody></table>
+
+<h2>表單和輸入</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_form.asp">&lt;form&gt;</a></td>
+<td>產生輸入表單</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a></td>
+<td>輸入欄</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_textarea.asp">&lt;textarea&gt;</a></td>
+<td>多行文字的區域</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_button.asp">&lt;button&gt;</a></td>
+<td>按鍵</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_select.asp">&lt;select&gt;</a></td>
+<td>下拉列表</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td>
+<td>在下拉列表中定義一組相關選項</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a></td>
+<td>定義下拉列表的參數</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_label.asp">&lt;label&gt;</a></td>
+<td>表單控制標籤</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td>
+<td>設定表單元件組</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_legend.asp">&lt;legend&gt;</a></td>
+<td>定義 &lt;fieldset&gt; 元素的標題</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_datalist.asp">&lt;datalist&gt;</a></td>
+<td>輸入欄的預定義選項列表</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_keygen.asp">&lt;keygen&gt;</a></td>
+<td>標籤定義生成密鑰</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_output.asp">&lt;output&gt;</a></td>
+<td>定義計算結果</td>
+</tr>
+</tbody></table>
+
+<h2>框架</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_frame.asp">&lt;frame&gt;</a></td>
+<td> <span class="deprecated">HTML5 不支援.<br></span>框架</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_frameset.asp">&lt;frameset&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援.<br></span>框架組</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_noframes.asp">&lt;noframes&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援.<br></span>不使用框架</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_iframe.asp">&lt;iframe&gt;</a></td>
+<td>插入行內框架</td>
+</tr>
+</tbody></table>
+
+<h2>圖片</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_img.asp">&lt;img&gt;</a></td>
+<td>插入圖片</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_map.asp">&lt;map&gt;</a></td>
+<td>影像地圖</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_area.asp">&lt;area&gt;</a></td>
+<td>定義影像地圖中的區域</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_canvas.asp">&lt;canvas&gt;</a></td>
+<td>配合 JavaScript 繪製圖案</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_figcaption.asp">&lt;figcaption&gt;</a></td>
+<td>定義 &lt;figure&gt; 元素的標題</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_figure.asp">&lt;figure&gt;</a></td>
+<td>定義圖片、影像媒體等</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a></td>
+<td>定義多個圖像資源的容器</td>
+</tr>
+</tbody></table>
+
+<h2>音頻視頻<br>
+</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_audio.asp">&lt;audio&gt;</a></td>
+<td>使用音訊</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_source.asp">&lt;source&gt;</a></td>
+<td>定義媒體來源</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_track.asp">&lt;track&gt;</a></td>
+<td>定義  &lt;video&gt; 與 &lt;audio&gt; 之文字內容</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_video.asp">&lt;video&gt;</a></td>
+<td>使用視訊</td>
+</tr>
+</tbody></table>
+
+<h2>鏈接</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></td>
+<td>超連結 / 錨點</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></td>
+<td>連結外部資源</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_nav.asp">&lt;nav&gt;</a></td>
+<td>定義導覽列鏈結</td>
+</tr>
+</tbody></table>
+
+<h2>清單</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_ul.asp">&lt;ul&gt;</a></td>
+<td>無序清單</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol&gt;</a></td>
+<td>有序清單</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_li.asp">&lt;li&gt;</a></td>
+<td>條列項目</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_dir.asp">&lt;dir&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用&lt;ul&gt; 代替.<br></span>定義目錄列表</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_dl.asp">&lt;dl&gt;</a></td>
+<td>定義描述列表</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_dt.asp">&lt;dt&gt;</a></td>
+<td>在描述列表中定義術語/名稱</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_dd.asp">&lt;dd&gt;</a></td>
+<td>在描述列表中定義術語/名稱的描述</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_menu.asp">&lt;menu&gt;</a></td>
+<td>定義命令列表</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_menuitem.asp">&lt;menuitem&gt;</a></td>
+<td>定義用戶可以通過彈出選單調用的命令項</td>
+</tr>
+</tbody></table>
+
+<h2>表格</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_table.asp">&lt;table&gt;</a></td>
+<td>插入表格</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_caption.asp">&lt;caption&gt;</a></td>
+<td>表格標題</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_th.asp">&lt;th&gt;</a></td>
+<td>表格之標題儲存格</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_tr.asp">&lt;tr&gt;</a></td>
+<td>表格的列</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_td.asp">&lt;td&gt;</a></td>
+<td>表格之儲存格</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_thead.asp">&lt;thead&gt;</a></td>
+<td>表格之標題</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_tbody.asp">&lt;tbody&gt;</a></td>
+<td>表格內文</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_tfoot.asp">&lt;tfoot&gt;</a></td>
+<td>表格註解</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_col.asp">&lt;col&gt;</a></td>
+<td>表格內之「欄」屬性</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_colgroup.asp">&lt;colgroup&gt;</a></td>
+<td>群組之表格的「欄」</td>
+</tr>
+</tbody></table>
+
+<h2>風格和語義</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_style.asp">&lt;style&gt;</a></td>
+<td>使用樣式</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_div.asp">&lt;div&gt;</a></td>
+<td>文件內區段</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_span.asp">&lt;span&gt;</a></td>
+<td>設定行內式樣</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_header.asp">&lt;header&gt;</a></td>
+<td>定義標題區</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_footer.asp">&lt;footer&gt;</a></td>
+<td>定義結尾區</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_main.asp">&lt;main&gt;</a></td>
+<td>指定文件的主要內容</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_section.asp">&lt;section&gt;</a></td>
+<td>定義文件裡的區塊</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_article.asp">&lt;article&gt;</a></td>
+<td>定義文章</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_aside.asp">&lt;aside&gt;</a></td>
+<td>定義側欄</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_details.asp">&lt;details&gt;</a></td>
+<td>定義互動面板的內容細節</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_dialog.asp">&lt;dialog&gt;</a></td>
+<td>定義對話框或窗口</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_summary.asp">&lt;summary&gt;</a></td>
+<td>定義互動面板的標籤</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_data.asp">&lt;data&gt;</a></td>
+<td>鏈接給定的內容與其機器可讀的翻譯</td>
+</tr>
+</tbody></table>
+
+<h2>Meta 信息</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_meta.asp">&lt;meta&gt;</a></td>
+<td>網頁文件資訊</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_base.asp">&lt;base&gt;</a></td>
+<td>文件內 ULR 之預設位置</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_basefont.asp">&lt;basefont&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用 CSS 語法代替.<br></span>基本字型式樣</td>
+</tr>
+</tbody></table>
+
+<h2>程序設計</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_script.asp">&lt;script&gt;</a></td>
+<td>使用語法 (e.g. JavaScript) </td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_noscript.asp">&lt;noscript&gt;</a></td>
+<td>為不支持客戶端腳本語法的用戶定義備用內容</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="https://www.w3schools.com/tags/tag_applet.asp">&lt;applet&gt;</a></td>
+<td><span class="deprecated">HTML5 不支援. 使用&lt;embed&gt; 或 &lt;object&gt; 代替.<br></span>插入 JAVA 元件</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="https://www.w3schools.com/tags/tag_embed.asp">&lt;embed&gt;</a></td>
+<td> 定義外部（非HTML）應用程序的容器 (嵌入元素)</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_object.asp">&lt;object&gt;</a></td>
+<td>嵌入（多媒體）物件</td>
+</tr>
+<tr>
+<td><a href="https://www.w3schools.com/tags/tag_param.asp">&lt;param&gt;</a></td>
+<td>定義物件的參數</td>
+</tr>
+</tbody></table>
+<br>
+<br>
+
+<!------Code End--------->
+
+
+
+
+
+</body></html>
