@@ -1,1 +1,167 @@
-<h1>123<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 視口 width=device-width根據瀏覽裝置寬度做調整 initial-scale=1.0 為初始縮放比%100  也就是做等比例調整-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 別人搜尋時會看到的內容介紹 -->
+    <meta name="description" content="Solo的網站">
+    <!-- 作者 -->
+    <meta name="author" content="Solo Han">
+    <!-- 關建字 -->
+    <meta name="keywords" content="Solo, html, 教學">
+    
+    <title>Solo的網頁</title>
+</head>
+<body>
+    <!-- h1 字體最大為最重要標題 通常一個頁面只有一個 -->
+   <h1> Hello Solo</h1>
+   <h2>第一篇</h2>
+   <!-- p 為一般文字段落 -->
+   <p>今天天氣真不錯 令人開心 <i>爽啦</i></p>
+   <h2>第二篇</h2>
+   <p>今天天氣真差 令人不爽 <b>哭哭</b></p>
+   <!-- <br></br> =<br/> -->
+   <br/>
+   <hr/>
+   <h2>第三篇</h2>
+   <p>我要出去玩 <i><b>最好是出國</b></i> </p>
+   <p>我要出去玩 <b><i> 最好是出國</i></b> </p>
+
+   <!-- 超連結 -->
+   <a href="https://google.com">google網站</a>
+   <a href="page2.html">第二頁</a>
+   <a href="dir/page3.html">第三頁</a>
+   <a href="94135.jpg">咖啡</a>
+
+    <img src="https://s.yimg.com/ny/api/res/1.2/zWY1GwNOgxJPbKPT3QKHhA--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9Mjg3/http://media.zenfs.com/zh-Hant-TW/homerun/setn.com.tw/a55d356533a4b639401edaf13d5911d0" />
+
+    <!-- 只設定一個會等比修改 -->
+   <img src="94135.jpg" width="500" height=""/>
+
+   <!-- 影片(controls才能撥放) & 嵌入YT影片 -->
+   <video src="自走避障車.mp4" width="500" controls>無法載入</video>
+   <iframe width="470" height="264" src="https://www.youtube.com/embed/FernSZtxZcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <!-- 列表&表格 -->
+   <ul>
+       <li>google</li>
+       <li>youtube</li>
+       <li>yahoo</li>
+       <li>facebook</li>
+   </ul>
+   <ol type="a" style="color: blue;">
+        <li>google</li>
+        <li>youtube</li>
+        <li>yahoo</li>
+        <li>facebook</li>
+   </ol>
+   <ol type="I">
+    <li>google</li>
+    <li>youtube</li>
+    <li>yahoo</li>
+    <li>facebook</li>
+</ol>
+
+<table width="400">
+    <!-- tr 一行 -->
+    <tr>
+        <td>日期</td>
+        <td>數學</td>
+        <td>英文</td>
+    </tr>
+    <tr>
+        <td>2/8</td>
+        <td>80</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>2/9</td>
+        <td>70</td>
+        <td>60</td>
+    </tr>
+</table>
+
+<!-- html的容器 div(可大範圍修改) & span -->
+<div style="color: blueviolet;">
+    <ul>
+        <li>google</li>
+        <li>youtube</li>
+        <li>yahoo</li>
+        <li>facebook</li>
+    </ul>
+    <ol type="a">
+         <li>google</li>
+         <li>youtube</li>
+         <li>yahoo</li>
+         <li>facebook</li>
+    </ol>
+    <ol type="I">
+     <li>google</li>
+     <li>youtube</li>
+     <li>yahoo</li>
+     <li>facebook</li>
+ </ol>
+ 
+ <table width="400">
+     <!-- tr 一行 -->
+     <tr>
+         <td>日期</td>
+         <td>數學</td>
+         <td>英文</td>
+     </tr>
+     <tr>
+         <td>2/8</td>
+         <td>80</td>
+         <td>90</td>
+     </tr>
+     <tr>
+         <td>2/9</td>
+         <td>70</td>
+         <td>60</td>
+     </tr>
+ </table>
+</div>
+
+<!-- a標籤 寬度多少就佔多少 -->
+<a href="#">link1</a>
+<a href="#">link2</a>
+<hr/>
+<!-- p標籤佔一整行  等於自動換行 -->
+<p>aa</p>
+<p>bb</p>
+
+<!-- span 寬度多少就佔多少 -->
+<span>span1</span>
+<span>span2</span>
+<hr/>
+<!-- div標籤佔一整行  等於自動換行 -->
+<div>div1</div>
+<div>div2</div>
+<br/>
+<br/>
+
+<!-- 輸入標籤 -->
+<input type="text" placeholder="輸入帳號"/>
+<br/>
+<br/>
+<input type="password" placeholder="輸入密碼"/>
+<br/>
+<br/>
+<input type="date">
+<br/>
+<br/>
+<input type="range">
+<br/>
+<br/>
+<input type="file">
+<br/>
+<br/>
+<input type="checkbox">
+<br/>
+<br/>
+<textarea>hello</textarea>
+
+</body>
+</html>
