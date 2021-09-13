@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+    background-color: rgb(182, 133, 228);
+    
+}
+h2{
+    float: left;
+    color: rgb(247, 243, 243);
+    font-size: 40px;
+    padding-bottom: 20px;
+    
+}
+h3{
+    color: rgb(247, 243, 243);
+    font-size: 40px;
+}
+.cafe_header{
+    text-align: right;
+   
+}
+.cafe_header a{
+    text-decoration: none;/*文字裝飾*/
+     /* display: inline-block; */
+    font-size: 30px;
+    padding: 10px 10px;/*上下10px 左右20px*/
+   color: chocolate;
+   /* background-color: aquamarine; */
+   
+}
+
+body{
+    background-image: url(./img/94135.jpg);
+}
+#ex1{
+    border: 10px solid rgb(9, 104, 72);
+    padding: 10px;
+    background: url(./img/329861.jpg);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position: center;
+    
+}
+
+p{
+    color: hsl(240, 100%, 99%);
+    
+}
+table,th,td{
+    color: rgb(239, 239, 245);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 240, 247);
+}
+table{
+    width: 30%;
+    margin-right: auto;
+    font-size: 30px;
+    
+}
+.origin_div{
+    text-align: center;
+}
+.origin_div a{
+    color: aqua;
+    text-decoration: none;
+    font-size: 30px;
+}
